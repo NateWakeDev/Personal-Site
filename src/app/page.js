@@ -174,6 +174,9 @@ const HomePage = () => {
         <div className="flex justify-center mb-8">
           <iframe src="https://lumalabs.ai/embed/00e72c99-0aed-4278-8cdc-ed1d8062331f?mode=slf&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="750" height="350" frameborder="0" title="luma embed" className='items-center'></iframe>
         </div>
+        <p className="text-sm text-center italic">
+          *Luma 3D model showcasing the embedded data acquisition system used in the CSULB SAE car. Feel free to interact with the model to see different angles and details of the setup.
+        </p>
       </div>
 
       <Divider className="my-4" />
