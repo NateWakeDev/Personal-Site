@@ -163,9 +163,6 @@ const HomePage = () => {
         <p className="text-lg">
           Currently, I am <Code color="primary" size="lg">IT Director</Code> and <Code color="primary" size="lg">Software Developer</Code> for <Code color="primary" size="lg">Sowing Seeds Health</Code>. I am responsible for keeping system security up to date, as well as developing and maintaining internal software to help streamline business processes.
         </p>
-        <div className="flex justify-center mb-8">
-          <iframe src="https://lumalabs.ai/embed/00e72c99-0aed-4278-8cdc-ed1d8062331f?mode=slf&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="750" height="350" frameborder="0" title="luma embed" className='items-center'></iframe>
-        </div>
       </div>
 
       {/* Previous Position */}
