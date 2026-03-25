@@ -34,10 +34,12 @@ const ProjectsPage = () => {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8"> {/* Container to center content */}
-      <h1 className="text-4xl font-bold mb-6">My Projects</h1> {/* Heading for the section */}
-      <p className="text-lg text-default-500 mb-6">Check out some of the projects I&apos;ve worked on! Click on them to learn more...</p> {/* Description */}
-      <Divider className="my-4" /> {/* Divider below the heading */}
+    <div className="container mx-auto px-4 py-8">
+      <div className="mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">My Projects</h1>
+        <p className="text-lg text-slate-400 mb-6">Check out some of the projects I&apos;ve worked on! Click on them to learn more...</p>
+      </div>
+      <Divider className="my-6 opacity-30" />
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {projectList.map((item, index) => {
           const PreviewComponent = item.preview; // Assign the component to render dynamically
@@ -46,11 +48,11 @@ const ProjectsPage = () => {
               shadow="sm"
               key={index}
               isPressable
-              onPress={() => (window.location.href = item.link)} // Navigate on press
-              className="border-2 border-gray-300 rounded-md cursor-pointer hover:border-gray-500"
+              onPress={() => (window.location.href = item.link)}
+              className="border border-slate-700/50 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl cursor-pointer hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:transform hover:-translate-y-1"
             >
               <CardHeader className="p-4 text-center">
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-blue-400">{item.title}</h3>
               </CardHeader>
 
               <CardBody className="overflow-visible p-0">
@@ -68,7 +70,7 @@ const ProjectsPage = () => {
               </CardBody>
 
               <CardFooter className="p-4 text-center">
-                <p className="text-default-500">{item.desc}</p>
+                <p className="text-slate-400">{item.desc}</p>
               </CardFooter>
             </Card>
           );

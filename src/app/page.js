@@ -139,101 +139,103 @@ const HomePage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 mb-8">
-        <h1 className="text-5xl font-bold text-center">Nathan Wakefield</h1>
+      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white py-24 mb-12 rounded-2xl shadow-2xl">
+        <h1 className="text-5xl md:text-6xl font-bold text-center mb-4">Nathan Wakefield</h1>
         {/* Rotating Text Line with Fade-in Effect */}
-        <p className={`text-center mt-4 text-xl transition-opacity duration-1000 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
+        <p className={`text-center mt-4 text-xl md:text-2xl transition-opacity duration-1000 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}>
           {phrases[currentPhraseIndex]}
         </p>
       </div>
 
       {/* About Me Section */}
-      <div className="mt-8 mb-8">
-        <h2 className="text-2xl font-bold mb-4">About Me</h2>
-        <p className="text-lg">
-          Hello! My name is <Code color="primary" size="lg">Nate</Code> and I am a <Code color="primary" size="lg">Software Developer</Code>. Currently I am currently focused in embedded programming, but have experience with web development, automation, application development, as well as UI/UX.
+      <div className="mt-8 mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-6 gradient-text">About Me</h2>
+        <p className="text-lg leading-relaxed">
+          Hello! My name is <Code color="primary" size="lg" className="font-semibold">Nate</Code> and I am a <Code color="primary" size="lg" className="font-semibold">Software Developer</Code>. Currently I am focused in embedded programming, but have experience with web development, automation, application development, as well as UI/UX.
         </p>
       </div>
 
-      <Divider className="my-4" />
+      <Divider className="my-8 opacity-30" />
 
        {/* Current Position */}
-      <div className="mt-8 mb-8">
-        <h2 className="text-2xl font-bold mb-4">Current Position</h2>
-        <p className="text-lg">
-          Currently, I am <Code color="primary" size="lg">IT Director</Code> and <Code color="primary" size="lg">Software Developer</Code> for <Code color="primary" size="lg">Sowing Seeds Health</Code>. I am responsible for keeping system security up to date, as well as developing and maintaining internal software to help streamline business processes.
+      <div className="mt-8 mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-6 gradient-text">Current Position</h2>
+        <p className="text-lg leading-relaxed">
+          Currently, I am <Code color="primary" size="lg" className="font-semibold">IT Director</Code> and <Code color="primary" size="lg" className="font-semibold">Software Developer</Code> for <Code color="primary" size="lg" className="font-semibold">Sowing Seeds Health</Code>. I am responsible for keeping system security up to date, as well as developing and maintaining internal software to help streamline business processes.
         </p>
       </div>
 
       {/* Previous Position */}
-      <div className="mt-8 mb-8">
-        <h2 className="text-2xl font-bold mb-4">Previous Position</h2>
-        <p className="text-lg">
-          Previously, I was <Code color="primary" size="lg">Lead of Data Acquisitions</Code> for the <Code color="primary" size="lg">CSULB SAE team</Code>. I was responsible for managing and creating the system used to collect data on different aspects of the car. This includes the design of the system, the programming of the system, and the data analysis of the system.
+      <div className="mt-8 mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-6 gradient-text">Previous Position</h2>
+        <p className="text-lg leading-relaxed mb-6">
+          Previously, I was <Code color="primary" size="lg" className="font-semibold">Lead of Data Acquisitions</Code> for the <Code color="primary" size="lg" className="font-semibold">CSULB SAE team</Code>. I was responsible for managing and creating the system used to collect data on different aspects of the car. This includes the design of the system, the programming of the system, and the data analysis of the system.
         </p>
-        <div className="flex justify-center mb-8">
-          <iframe src="https://lumalabs.ai/embed/00e72c99-0aed-4278-8cdc-ed1d8062331f?mode=slf&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="750" height="350" frameborder="0" title="luma embed" className='items-center'></iframe>
+        <div className="flex justify-center mb-6">
+          <iframe src="https://lumalabs.ai/embed/00e72c99-0aed-4278-8cdc-ed1d8062331f?mode=slf&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="750" height="350" frameBorder="0" title="luma embed" className='items-center rounded-lg shadow-lg'></iframe>
         </div>
-        <p className="text-sm text-center italic">
+        <p className="text-sm text-center italic text-slate-400">
           *Luma 3D model showcasing the embedded data acquisition system used in the CSULB SAE car. Feel free to interact with the model to see different angles and details of the setup.
         </p>
       </div>
 
-      <Divider className="my-4" />
+      <Divider className="my-8 opacity-30" />
 
       {/* Programming Languages Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Programming Languages</h2>
-        <section>
+      <div className="mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-8 gradient-text">Programming Languages</h2>
+        <section className="space-y-4">
           {programmingLanguages.map((language, index) => (
             <div
               key={index}
-              className="flex items-center mb-2"
-              style={{ gap: '1rem' }} // Adds consistent spacing between elements
+              className="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-800/30 transition-all duration-300"
             >
-              <div className="w-40 text-2xl font-bold text-right">{language.title}</div> {/* Fixed width for titles */}
+              <div className="w-32 md:w-40 text-xl md:text-2xl font-bold text-right">{language.title}</div>
               <div className="flex-grow">
                 <Progress
                   aria-label={language.title}
                   value={language.years}
                   maxValue="5"
                   color="primary"
-                  size="sm"
-                  className="w-full" // Ensures the progress bar takes the remaining space
+                  size="md"
+                  className="w-full"
                 />
               </div>
-              <div className="text-2xl">{language.years} years</div> {/* Consistent spacing */}
+              <div className="text-lg md:text-xl font-semibold text-blue-400 w-24 text-right">{language.years} years</div>
             </div>
           ))}
         </section>
       </div>
 
       {/* Skills Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Other Skills</h2>
-        <div className="flex flex-wrap gap-4">
+      <div className="mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-8 gradient-text">Other Skills</h2>
+        <div className="flex flex-wrap gap-3">
           {otherSkills.map((skill, index) => (
-            <div key={index} className="flex items-center justify-center bg-gray-800 p-2 rounded">
-              {skill}
+            <div 
+              key={index} 
+              className="px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-full hover:from-blue-600/30 hover:to-purple-600/30 hover:border-blue-400/50 transition-all duration-300 cursor-default"
+            >
+              <span className="text-sm font-medium">{skill}</span>
             </div>
           ))}
         </div>
       </div>
 
-      <Divider className="my-4" />
+      <Divider className="my-8 opacity-30" />
 
       {/* Project Experience Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Project Experience</h2>
-        <div className="flex gap-6 overflow-x-auto">
+      <div className="mb-12">
+        <h2 className="text-3xl font-bold mb-8 gradient-text">Project Experience</h2>
+        <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
           {projectList.map((project, index) => (
             <div
               key={index}
-              className="min-w-[250px] max-w-sm border border-gray-300 rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 flex-shrink-0"
+              className="min-w-[280px] max-w-sm border border-slate-700/50 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl p-6 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-500/50 transition-all duration-300 flex-shrink-0 hover:transform hover:-translate-y-1"
             >
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-500 mb-2">{project.date}</p>
-              <ul className="list-disc pl-5 text-sm mb-4">
+              <h3 className="text-xl font-bold mb-2 text-blue-400">{project.title}</h3>
+              <p className="text-sm text-slate-400 mb-4">{project.date}</p>
+              <ul className="list-disc pl-5 text-sm mb-6 space-y-1 text-slate-300">
                 {project.bullets.map((bullet, i) => (
                   <li key={i}>{bullet}</li>
                 ))}
@@ -242,7 +244,7 @@ const HomePage = () => {
                 <Code
                   color="primary"
                   size="lg"
-                  className={project.isDisabled ? 'pointer-events-none text-gray-400' : ''}
+                  className={`${project.isDisabled ? 'pointer-events-none opacity-50' : 'hover:scale-105'} transition-transform duration-200`}
                   style={{ cursor: project.isDisabled ? 'not-allowed' : 'pointer' }}
                 >
                   {project.isDisabled ? 'Page coming Soon...' : project.linkText}
@@ -253,40 +255,52 @@ const HomePage = () => {
         </div>
       </div>
 
-      <Divider className="my-4" />
+      <Divider className="my-8 opacity-30" />
 
       {/* Education Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Education</h2>
+      <div className="mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-6 gradient-text">Education</h2>
         <div>
-          <h3 className="text-xl font-bold">California State University, Long Beach</h3>
-          <p className="italic">B.S. in Computer Science, August 2019 &#45; December 2024</p>
-          <p>Relevant Coursework: Databases, Programming Language Principles, Algorithms, Data Structures, Object-Oriented Design, Python, Software Design Principles</p>
+          <h3 className="text-2xl font-bold text-blue-400 mb-2">California State University, Long Beach</h3>
+          <p className="italic text-lg mb-3 text-slate-300">B.S. in Computer Science, August 2019 &#45; December 2024</p>
+          <p className="text-slate-400"><span className="font-semibold text-slate-300">Relevant Coursework:</span> Databases, Programming Language Principles, Algorithms, Data Structures, Object-Oriented Design, Python, Software Design Principles</p>
         </div>
       </div>
 
-      <Divider className="my-4" />
+      <Divider className="my-8 opacity-30" />
 
       {/* Work Experience Section */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">Relevant Work Experience</h2>
-        <div className="mb-4">
-          <h3 className="text-xl font-bold">Manager of Marketing and Social Media, DeLillo Chevrolet</h3>
-          <p className="italic">Jan. 2021 &#45; Present, Huntington Beach, CA</p>
-          <ul className="list-disc pl-5">
-            <li>Developed Python tooling to automate tasks, optimizing output.</li>
-            <li>Performed data analysis using Excel&apos;s visualization tools.</li>
-            <li>Maintained backend price management software.</li>
-            <li>Managed business marketing initiatives to drive sales and generate leads.</li>
-          </ul>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-xl font-bold">3D Printing Technician, Self-Employed</h3>
-          <p className="italic">June 2017 &#45; Present, Long Beach, CA</p>
-          <ul className="list-disc pl-5">
-            <li>Created and shipped prototypes using CAD modeling and 3D printing.</li>
-            <li>Maintained 3D printers and automated print job workflows.</li>
-          </ul>
+      <div className="mb-12 p-6 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700/50 backdrop-blur-sm">
+        <h2 className="text-3xl font-bold mb-8 gradient-text">Relevant Work Experience</h2>
+        <div className="space-y-8">
+          <div className="border-l-4 border-blue-500 pl-6 hover:border-purple-500 transition-colors duration-300">
+            <h3 className="text-xl font-bold text-blue-400 mb-1">IT Manager / Software Developer, Sowing Seeds Health</h3>
+            <p className="italic text-slate-400 mb-3">Jan. 2025 &#45; Present, Irvine, CA</p>
+            <ul className="list-disc pl-5 space-y-2 text-slate-300">
+              <li>Oversaw the installation, configuration, and maintenance of hardware and software systems across multiple locations.</li>
+              <li>Provided daily IT support for 40+ employees, as well as trained staff on system use.</li>
+              <li>Rebuilt and managed the organization&apos;s website using WordPress and Beaver Builder.</li>
+              <li>Supporting data collection for Enhanced Care Management and Community Health Worker programs.</li>
+            </ul>
+          </div>
+          <div className="border-l-4 border-blue-500 pl-6 hover:border-purple-500 transition-colors duration-300">
+            <h3 className="text-xl font-bold text-blue-400 mb-1">Marketing Manager, DeLillo Chevrolet</h3>
+            <p className="italic text-slate-400 mb-3">Jan. 2021 &#45; May 2024, Huntington Beach, CA</p>
+            <ul className="list-disc pl-5 space-y-2 text-slate-300">
+              <li>Developed Python tooling to automate tasks, optimizing output.</li>
+              <li>Performed data analysis using Excel&apos;s visualization tools.</li>
+              <li>Maintained backend price management software.</li>
+              <li>Managed business marketing initiatives to drive sales and generate leads.</li>
+            </ul>
+          </div>
+          <div className="border-l-4 border-blue-500 pl-6 hover:border-purple-500 transition-colors duration-300">
+            <h3 className="text-xl font-bold text-blue-400 mb-1">3D Printing Technician, Self-Employed</h3>
+            <p className="italic text-slate-400 mb-3">Jan. 2019 &#45; Present, Long Beach, CA</p>
+            <ul className="list-disc pl-5 space-y-2 text-slate-300">
+              <li>Created and shipped prototypes using CAD modeling and 3D printing.</li>
+              <li>Maintained 3D printers and automated print job workflows.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
