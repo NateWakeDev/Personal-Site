@@ -62,7 +62,7 @@ const ResumePage = () => {
           <ul className="list-disc pl-5">
             <li>Oversaw the installation, configuration, and maintenance of hardware and software systems across multiple locations.</li>
             <li>Provided daily IT support for 40+ employees, as well as trained staff on system use.</li>
-            <li>Rebuilt and managed the organization's website using WordPress and Beaver Builder.</li>
+            <li>Rebuilt and managed the organization&apos;s website using WordPress and Beaver Builder.</li>
             <li>Supporting data collection for Enhanced Care Management and Community Health Worker programs.</li>
           </ul>
         </div>
@@ -71,7 +71,7 @@ const ResumePage = () => {
           <p className="italic">Jan. 2021 - May 2024, Huntington Beach, CA</p>
           <ul className="list-disc pl-5">
             <li>Developed Python tooling to automate tasks, optimizing output.</li>
-            <li>Performed data analysis using Excel's visualization tools.</li>
+            <li>Performed data analysis using Excel&apos;s visualization tools.</li>
             <li>Maintained backend price management software.</li>
             <li>Managed business marketing initiatives to drive sales and generate leads.</li>
           </ul>
